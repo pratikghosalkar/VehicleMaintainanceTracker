@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".VehicleMaintenanceActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/etDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="30 July 2016"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Date"
+                app:met_floatingLabelTextColor="#000000"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/etDepotLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:enabled="false"
+                android:text="Pune"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Depot Location"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/etODOReading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="Current ODO Reading"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="ODO Reading"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/etFuelTankCheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="Fuel Tank Check"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Fuel Tank Check"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/etFilterCheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="Filter Check"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Filter Check"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/etRemark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="Remark"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Remark"/>
+
+            <Button
+                android:id="@+id/buttonPartsStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimary"
+                android:text="Parts Status"
+                android:textColor="#ffffff"/>
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimary"
+                android:text="Schedule Next Chekup"
+                android:textColor="#ffffff"/>
+
+            <Button
+                android:id="@+id/buttonTakeSign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimary"
+                android:text="Manager&apos;s Signature"
+                android:textColor="#ffffff"/>
+
+            <Button
+                android:id="@+id/buttonSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimary"
+                android:text="Submit"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
